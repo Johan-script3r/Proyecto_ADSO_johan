@@ -1,0 +1,84 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas Médicas - Salud y Confianza</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {}
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    {% include "barra_nav.html" %}
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="container">
+                <h2>Tu Guía Confiable en el Mundo Médico</h2>
+                <p>Encuentra y comparte reseñas de profesionales y centros de salud para tomar decisiones informadas sobre tu bienestar.</p>
+                <a href="{{ url_for('index') }}" class="button">Empezar Ahora</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="services-section">
+            <div class="container">
+                <h3>Lo que Ofrecemos</h3>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <img src="/static/jpg/icon_search.png" alt="Icono de Búsqueda">
+                        <h4>Búsqueda Detallada</h4>
+                        <p>Encuentra médicos, clínicas y hospitales por especialidad, ubicación y más.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/static/jpg/icon_review.png" alt="Icono de Reseña">
+                        <h4>Reseñas Verificadas</h4>
+                        <p>Lee opiniones honestas de pacientes reales para ayudarte a elegir.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="/static/jpg/icon_share.png" alt="Icono de Compartir">
+                        <h4>Comparte Tu Experiencia</h4>
+                        <p>Ayuda a otros compartiendo tus propias experiencias médicas de forma anónima.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resenas" class="testimonials-section">
+            <div class="container">
+                <h3>Lo que Dicen Nuestros Usuarios</h3>
+                <div class="testimonial-carousel">
+                    <div class="testimonial-item">
+                        <p>"Gracias a esta plataforma encontré al especialista perfecto para mi condición. ¡Totalmente recomendado!"</p>
+                        <span>— Sofía G.</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Es increíble poder leer experiencias de otros antes de tomar una decisión importante sobre mi salud. Me dio mucha tranquilidad."</p>
+                        <span>— Javier R.</span>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>"Fácil de usar y muy útil. Contribuir con mis propias reseñas es una forma de agradecer a la comunidad."</p>
+                        <span>— Laura M.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Salud & Confianza. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Servicio</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
